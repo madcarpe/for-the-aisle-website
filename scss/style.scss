@@ -1,88 +1,30 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
+$primary: #8C3253;
 
-/*=====================================================================
-@Template Name: Cerative Agency
-@Author: Rocky
-@Developed By: Rocky
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
+.btn-primary {
+  @include button-variant($primary, darken($primary, 7.5%), darken($primary, 10%), lighten($primary,5%), lighten($primary, 10%), darken($primary,30%));
+}
 
-@Default Styles
+.btn-outline-primary {
+  @include button-outline-variant($primary, #222222, lighten($primary,5%), $primary);
+}
 
-Table of Content:
-01/ Variables
-02/ predefin
-03/ header
-04/ banner
-05/ slider
-06/ feature
-07/ button
-08/ service
-09/ testimonials 
-10/ blog 
-11/ contact 
-12/ footer 
-=====================================================================*/ 
+// Font Variables
+$dancing-script: 'Dancing Script', cursive;
+$lato: 'Lato', sans-serif;
 
-/*----------------------------------------------------*/
-@import "variables";
-/*---------------------------------------------------- */ 
+// Custom Styles
+body {
+  font-family: $lato;
+}
 
-/*----------------------------------------------------*/
-@import "predefin";
-/*---------------------------------------------------- */
+.fancy {
+  font-family: $dancing-script;
+}
 
-/*----------------------------------------------------*/
-@import "header";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "banner";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "slider";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "feature";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "button";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "contact";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "chart";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "portfolio";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "blog";
-/*---------------------------------------------------- */
-
-/*----------------------------------------------------*/
-@import "footer";
-/*---------------------------------------------------- */
-
-
-
-
-
-
+.indent {
+  padding-left: 20px;
+}
